@@ -1,8 +1,8 @@
 #!/bin/bash
 #screen -dm -S trade11 ./trade.sh trade11
 #screen -dm -S web11 ./web.sh WebClient_ml
-screen -dm -S tradev201 ./trade.sh tradev201
-screen -dm -S WebClientv201 ./web.sh WebClientv201
+#screen -dm -S tradev201 ./trade.sh tradev201
+#screen -dm -S WebClientv201 ./web.sh WebClientv201
 
 screen -dm -S shticker ./startq.sh shticker
 screen -dm -S szticker ./startq.sh szticker
@@ -16,6 +16,9 @@ sleep 10
 screen -dm -S mwslast ./startq.sh mwslast
 screen -dm -S mlast ./startq.sh mlast
 screen -dm -S tlast ./startq.sh tlast
+
+screen -dm -S m_saver ./startmsaver.sh market
+screen -dm -S t_saver ./startmsaver.sh transaction
 
 screen -ls 
 
